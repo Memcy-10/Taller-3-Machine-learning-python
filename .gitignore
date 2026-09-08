@@ -1,0 +1,14 @@
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.vscode/
+.idea/
+*.log
+*.tmp
+*.pkl
+*.joblib
