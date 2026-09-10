@@ -34,4 +34,4 @@ Model.fit(x, y)
 # plt.show()
 
 # Guardar el artefacto del modelo entrenado en un archivo
-joblib.dump(Model,"./Modelos_ML/regrecion lineal/Models/linea_model.pkl")
+joblib.dump(Model,"./Models/linea_model.pkl")
