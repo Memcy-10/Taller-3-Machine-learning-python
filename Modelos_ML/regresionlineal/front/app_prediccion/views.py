@@ -22,7 +22,7 @@ def home(request):
                     context['resultado'] = precio_formateado
                     context['area'] = area_m2
                 else:
-                    context['error'] = f"La API respondió {response.status_code}: {response.text}"
+                    context['error'] = "No se pudo realizar la predicción. Inténtalo nuevamente."
                     
             except requests.exceptions.RequestException:
                 context['error'] = "No se pudo conectar con la API."
