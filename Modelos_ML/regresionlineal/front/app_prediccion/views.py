@@ -11,7 +11,7 @@ def home(request):
         area_m2 = request.POST.get('area_m2')
         if area_m2:
             try:
-                api_url = os.environ["API_URL"]
+                api_url = os.environ["API_URL"].rstrip("/") + "/predict"
                 payload = {"area_m2": float(area_m2)}
                 
                 response = requests.post(api_url, json=payload)
